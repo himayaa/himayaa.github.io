@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "fomantic-ui": "^2.9.2",
     "fullcalendar": "^6.1.8",
     "moment-timezone": "^0.5.43"
