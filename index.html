@@ -7,13 +7,15 @@
     <meta name="keywords" content="Maya Hillegonds, himayaa, himaya, himayaa.io" />
     <title>himayaa.io</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
 
     <!-- Fomantic UI CSS library
        https://fomantic-ui.com/introduction/getting-started.html#using-a-cdn-provider -->
     <!-- You MUST include jQuery 3+ before Fomantic -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/dist/semantic.min.css">
-    <script src="/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="semantic/dist/semantic.min.js"></script>
 
     
     <!-- moment.js and timezone
@@ -22,21 +24,10 @@
     <!-- FullCalendar JS library
        https://fullcalendar.io/docs
        https://fullcalendar.io/docs/google-calendar  -->
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
-    <script>
+       <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.9/index.global.min.js'></script>
+       <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.9/index.global.min.js'></script>
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
-        });
-        calendar.render();
-      });
-
-    </script>
-
-    <!-- Custom fonts used for custom icons like Emacs, Gradescope, etc. -->
-    <link href='assets/fontpack/custompack.css' rel='stylesheet' />
+    
 
     <style>
         .ui .meta .icon {
@@ -44,95 +35,135 @@
     }
     </style>
 
-</head>
-<body>
-      <!-- Nav bar on left side -->
-  <div class="ui left vertical sidebar labeled icon menu">
 
-    <!-- Logo and Course Title -->
+
+    
+
+</head>
+
+<body>
+  <div class="ui thin visible sidebar vertical menu">
+
     <div class="item">
       <a class="ui logo icon image tiny" href="#">
         <img src="assets/favicon_io/favicon-32x32.png" alt="logo">
       </a>
       <br>
       <br>
-      <a href="#"><b>himayaa.io</b></a>
-    </div>
+      <a href="#"><b>Welcome, viewer.</b></a>
+    </div> <!-- Menu header end -->
 
-    <!-- Internal links -->
+    <!-- Utility links -->
     <div class="item">
+      <a><span class="ui red text">Utility Links</span></a>
       <div class="menu">
-        <a id="sidebar-admin-requests-modal-button" class="item">
-          Admin Requests
+        <a class="item" href="https://wolverineaccess.umich.edu/" target="_blank">
+          Wolverine Access <i class="bug icon" style="display: inline;"></i>
         </a>
-        <a class="item" href="#calendar-header">
-          Calendar
+        <a class="item" href="https://umich.instructure.com/" target="_blank">
+          Canvas <i class="bug icon" style="display: inline;"></i>
         </a>
-        <a class="item" href="#schedule">
-          Schedule
+        <a class="item" href="https://github.com/himayaa" target="_blank">
+          Github <i class="github icon" style="display: inline;"></i>
         </a>
-        <a class="item" href="#people">
-          People
+        <a class="item" href="https://docs.google.com/document/d/1VNmCuosTDYvDWkpJA0IQJD7w0CW6RYzoXFBPb71YA5A/edit" target="_blank">
+          Planner <i class="bug icon" style="display: inline;"></i>
         </a>
-        <a class="item" href="syllabus.html">
-          Syllabus <i class="external alternate icon" style="display: inline;"></i>
-        </a>
-        <a class="item" href="https://eecs280staff.github.io/tutorials/">
-          Tutorials <i class="external alternate icon" style="display: inline;"></i>
-        </a>
-        <a class="item" href="calculator.html">
-          Grade Calculator <i class="external alternate icon" style="display: inline;"></i>
-        </a>
-        <a class="item" href="archive/">
-          Course Archive <i class="external alternate icon" style="display: inline;"></i>
-        </a>
+        
       </div>
-    </div><!-- /Internal links -->
+    </div><!-- /Utility links -->
 
-    <!-- External links -->
-    <div class="menu">
-      <a class="item" href="https://piazza.com/umich/fall2023/eecs280" target="_blank">
-        <i class="ui big icon icon-piazza" style="color: #3e7aab;"></i>
-        Piazza
-      </a>
-      <a class="item" href="https://discord.gg/WH6gndxSQU" target="_blank">
-        <i class="ui big discord icon" style="color: #7289da;"></i>
-        Discord
-      </a>
-      <a class="item" href="https://eecsoh.eecs.umich.edu/queues/23NARp3KOEA5IDygnDVCqp5F6Fg" target="_blank">
-        <img class="ui centered mini image" src="assets/images/office_hours_lobster.jpg" alt="office hours lobster" />
-        Office Hours
-      </a>
-      <a class="item" href="https://autograder.io/web/course/229" target="_blank">
-        <img class="ui centered mini image" src="assets/images/autograder_lobster.jpg" alt="autograder lobster" />
-        Autograder
-      </a>
-      <a class="item" href="https://drive.google.com/drive/folders/1lNLvZiQcaqESamyCruTkf0jdVuz0IPWo?usp=sharing" target="_blank">
-        <i class="ui big black icon google drive"></i>
-        Files
-      </a>
-      <a class="item" href="https://eecs280staff.github.io/notes/" target="_blank">
-        <i class="ui big blue book icon"></i>
-        Lecture Notes
-      </a>
-      <a class="item" href="https://www.gradescope.com/courses/573574" target="_blank">
-        <i class="ui big teal icon icon-gradescope"></i>
-        Gradescope
-      </a>
-      <a class="item" href="https://umich.instructure.com/courses/618627" target="_blank">
-        <i class="ui big red icon icon-canvas"></i>
-        Canvas
-      </a>
-      <a class="item" href="https://lobster.eecs.umich.edu" target="_blank">
-        <img class="ui centered mini image" src="assets/images/lobster.png" alt="lobster" />
-        Lobster
-      </a>
-    </div><!-- /External links -->
-  </div><!-- /Nav bar -->
+    <!-- Personal links -->
+    <div class="item">
+      <a><span class="ui purple text">Personal Links</span></a>
+      <div class="menu">
+        <a class="item" href="https://www.goodreads.com/user/show/157439893-maya" target="_blank">
+          Goodreads <i class="goodreads icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://fordschool.umich.edu/events" target="_blank">
+          Talks <i class="dragon icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://en.wikipedia.org/wiki/Cicada" target="_blank">
+          Cicada <i class="dragon icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://drive.google.com/drive/my-drive" target="_blank">
+          Drive <i class="google drive icon" style="display: inline;"></i>
+        </a>
+        
+      </div>
+    </div><!-- /Personal links -->
 
-    <div id='calendar'></div>
+    <!-- Page links -->
+    <div class="item">
+      <a><span class="ui blue text">Page Links</span></a>
+      <div class="menu">
+        <a class="item" href="" target="_blank">
+          Calendar <i class="hat wizard icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="" target="_blank">
+          Widgets <i class="music icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="" target="_blank">
+          Spotlight <i class="smoking icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="" target="_blank">
+          Lists <i class="ghost icon" style="display: inline;"></i>
+        </a>
+        
+      </div>
+    </div><!-- /Page links -->
 
-    <footer class="ui vertical footer segment">
-    </footer>
+    <!-- Social links -->
+    <div class="item">
+      <a><span class="ui green text">Social Links</span></a>
+      <div class="menu">
+        <a class="item" href="https://www.linkedin.com/in/mayahillegonds/" target="_blank">
+          LinkedIn <i class="linkedin icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://www.instagram.com/mayahillegonds/" target="_blank">
+          Instagram <i class="instagram icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://wolverineaccess.umich.edu/" target="_blank">
+          Discord <i class="discord icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://open.spotify.com/user/dt61yflcnbg2kic21ts3e86q4" target="_blank">
+          Spotify <i class="spotify icon" style="display: inline;"></i>
+        </a>
+        
+        
+      </div>
+    </div><!-- /Social links -->
+
+  </div> <!-- End of nav bar -->
+
+  <!-- Site content !-->
+  <div class="pusher">
+    <h1> Hello </h1>
+    
+    <h2 id="calendar-header">
+      Calendar
+    </h2>
+    <div id="calendar"></div>
+
+
+
+
+  </div> <!-- End of visible content -->
+
+
+  <script>
+    $(document).ready(function() {
+    var $sidebar = $('.ui.sidebar');
+
+    
+    // Show sidebar if the screen is not small
+    if (screen.width >= 900) {
+      $sidebar.sidebar('show');
+    }
+    });
+  </script>
+
+  <script src="assets/js/calendar.js"></script>
+
 </body>
 </html>
