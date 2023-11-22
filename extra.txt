@@ -1,0 +1,32 @@
+Extra sidebar if wanted:
+<!-- Optional sidebar -->
+  <div class="ui thin visible inverted sidebar vertical menu">
+
+    <div class="item">
+      <a class="ui logo icon image tiny" href="#">
+        <img src="assets/favicon_io/favicon-32x32.png" alt="logo">
+      </a>
+      <br>
+      <br>
+      <a href="#"><b>Welcome, viewer.</b></a>
+    </div> <!-- Menu header end -->
+
+    <!-- Utility links -->
+    <div class="item">
+      <a><span class="ui red text">Utility Links</span></a>
+      <div class="menu">
+        <a class="item" href="https://www.linkedin.com/in/mayahillegonds/" target="_blank">
+          LinkedIn <i class="linkedin icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://github.com/himayaa" target="_blank">
+          Github <i class="github icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://www.instagram.com/mayahillegonds/" target="_blank">
+          Instagram <i class="instagram icon" style="display: inline;"></i>
+        </a>
+        
+        
+      </div>
+    </div><!-- /Utility links -->
+
+  </div> <!-- End of nav bar -->
