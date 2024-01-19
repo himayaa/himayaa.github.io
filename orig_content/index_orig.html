@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="himayaa.io" />
+    <meta name="keywords" content="Maya Hillegonds, himayaa, himaya, himayaa.io" />
+    <title>himayaa.io</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <!-- Fomantic UI CSS library
+       https://fomantic-ui.com/introduction/getting-started.html#using-a-cdn-provider -->
+    <!-- You MUST include jQuery 3+ before Fomantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    
+    <!-- moment.js and timezone
+       https://momentjs.com/timezone/docs/ -->
+
+    <!-- FullCalendar JS library
+       https://fullcalendar.io/docs
+       https://fullcalendar.io/docs/google-calendar  
+       <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.9/index.global.min.js'></script>
+       <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.9/index.global.min.js'></script>
+    -->
+
+    <style>
+        .ui .meta .icon {
+        margin-right: 0.1em !important;
+    }
+    </style>
+
+</head>
+
+<body  style="background-color: #F8F9F9">
+
+  <!-- Optional sidebar -->
+  <div class="ui thin visible left sidebar vertical menu">
+
+    <div class="item">
+      <a class="ui logo icon image tiny" href="#">
+        <img src="assets/favicon_io/favicon-32x32.png" alt="logo">
+      </a>
+      <br>
+      <br>
+      <a href="#"><b>Welcome, viewer.</b></a>
+    </div> <!-- Menu header end -->
+
+    <!-- Utility links -->
+    <div class="item">
+      <a><span class="ui red text">Utility Links</span></a>
+      <div class="menu">
+        <a class="item" href="https://www.linkedin.com/in/mayahillegonds/" target="_blank">
+          LinkedIn <i class="linkedin icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://github.com/himayaa" target="_blank">
+          Github <i class="github icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://www.instagram.com/mayahillegonds/" target="_blank">
+          Instagram <i class="instagram icon" style="display: inline;"></i>
+        </a>
+        <a class="item" href="https://www.goodreads.com/user/show/157439893-maya" target="_blank">
+          Goodreads <i class="goodreads icon" style="display: inline;"></i>
+        </a>
+        
+      </div>
+    </div><!-- /Utility links -->
+
+  </div> <!-- End of nav bar -->
+  
+  <!-- Site content !-->
+<div class="ui left aligned container">
+
+  <div class="pusher" style="background-color: #F5EEF8;">
+    <div class="ui hidden divider"></div>
+
+    
+    <h1> website prototype</h1>
+    
+    
+    <div class="ui hidden divider inverted"></div>
+
+    <div class="ui card">
+      <div class="content">
+        <a class="header">Kristy</a>
+        <div class="meta">
+          <span class="date">Joined in 2013</span>
+        </div>
+        <div class="description">
+          Kristy is an art director living in New York.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ui four cards">
+      <div class="ui card">
+        <div class="ui segment">
+          About <span class="ui purple text">Me:</span>
+        </div>
+      </div>
+      <div class="ui card">
+        <div class="ui segment">
+          Follow what I'm currently <span class="ui blue text">reading.</span>
+        </div>
+      </div>
+      <script src="https://www.goodreads.com/review/custom_widget/157439893.Maya's%20bookshelf:%20currently-reading?cover_position=left&cover_size=small&num_books=5&order=a&shelf=currently-reading&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=1&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1695653812&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charset="utf-8"></script>
+    </div>
+
+
+    
+  </div> <!-- End of visible content -->
+</div>
+
+  <script>
+    $(document).ready(function() {
+    var $sidebar = $('.ui.sidebar');
+    
+    // Show sidebar if the screen is not small
+    if (screen.width >= 900) {
+      $sidebar.sidebar('show');
+    }
+    });
+  </script>
+
+  
+</body>
+</html>
