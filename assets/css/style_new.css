@@ -63,7 +63,7 @@ a {
 	margin:0px 0px 5px 0px;
 	display:table;
 	border-radius:4px;
-	color:#85AD90;
+	color:#5b79a8;
 }
 .goal-summary .backers span, .goal-summary .funded span, .goal-summary .time-left span {
 	color:#fff;
@@ -148,6 +148,8 @@ a {
 	border-radius:50%;
 	max-height: 180px;
 	margin-bottom:10px;
+	border: 6px solid #555;
+	border-color: white;
 }
 .profile-contents ul li {
 	padding:0;
@@ -261,7 +263,7 @@ a {
 	margin-bottom:0;
 }
 .reward-block h3 {
-	background: #99DEAB;
+	background: #5b79a8;
 	color: #fff;
 	font-size: 15px;
 	font-weight: 700;
@@ -273,11 +275,11 @@ a {
 .reward-block h2 {
 	font-size: 20px;
 	font-weight: 300;
-	color: #99DEAB;
+	color: #5b79a8;
 	margin: 15px 0px;
 }
 .reward-block i.fa {
-	color:#99DEAB;
+	color:#5b79a8;
 }
 .reward-block span {
 	margin-bottom: 10px;
